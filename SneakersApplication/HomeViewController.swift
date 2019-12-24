@@ -13,11 +13,22 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var nameText: UILabel!
     @IBOutlet weak var welcomeLabel: UILabel!
     @IBOutlet weak var emailText: UILabel!
-   
+    var passed : Bool = false
+    var name = ""
+    var email = ""
+    var welcome = ""
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        changeLogs()
         
+    }
+    
+    func changeLogs()  {
+        if passed == true {
+            nameText.text = name
+            welcomeLabel.text = welcome
+            emailText.text = email
+        }
     }
     
 

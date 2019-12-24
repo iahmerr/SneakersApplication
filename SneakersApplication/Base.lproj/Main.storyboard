@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SplashScreen" translatesAutoresizingMaskIntoConstraints="NO" id="KBX-ml-oma">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="627"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UWq-5W-h3X">
                                 <rect key="frame" x="16" y="516" width="343" height="60"/>
@@ -24,6 +24,9 @@
                                     <constraint firstAttribute="height" constant="60" id="Uot-60-QK3"/>
                                 </constraints>
                                 <state key="normal" title="Welcome" image="FacebookLoginButton"/>
+                                <connections>
+                                    <action selector="loginwithFacebook:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UyD-PA-cEm"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sPA-am-RY4">
                                 <rect key="frame" x="16" y="587" width="343" height="60"/>
@@ -31,20 +34,23 @@
                                     <constraint firstAttribute="height" constant="60" id="g9B-e4-gyy"/>
                                 </constraints>
                                 <state key="normal" image="GoogleSignUpDark"/>
+                                <connections>
+                                    <action selector="loginWithInstagram:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dtG-RW-mWs"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="KBX-ml-oma" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" symbolic="YES" id="3b4-jS-DXX"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sPA-am-RY4" secondAttribute="trailing" constant="16" id="6AJ-nC-yWD"/>
+                            <constraint firstAttribute="bottom" secondItem="KBX-ml-oma" secondAttribute="bottom" constant="20" symbolic="YES" id="B4h-P0-zw8"/>
                             <constraint firstItem="KBX-ml-oma" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="P9B-Ce-p6z"/>
                             <constraint firstItem="sPA-am-RY4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="SMp-ri-Aai"/>
                             <constraint firstItem="UWq-5W-h3X" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="WNu-L7-W1Q"/>
-                            <constraint firstItem="KBX-ml-oma" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="XqT-Sb-wGS"/>
                             <constraint firstItem="sPA-am-RY4" firstAttribute="top" secondItem="UWq-5W-h3X" secondAttribute="bottom" constant="11" id="exC-LN-4K6"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sPA-am-RY4" secondAttribute="bottom" constant="20" id="iqw-5Y-x1z"/>
                             <constraint firstItem="KBX-ml-oma" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="sxx-7Z-aet"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UWq-5W-h3X" secondAttribute="trailing" constant="16" id="wMf-9o-KSv"/>
-                            <constraint firstItem="KBX-ml-oma" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="wXP-3k-Kd9"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -81,13 +87,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Logged in Using facebook services. " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F6T-Ih-9pp">
-                                <rect key="frame" x="16" y="87" width="343" height="20.5"/>
+                                <rect key="frame" x="16" y="131" width="343" height="20.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="DP" translatesAutoresizingMaskIntoConstraints="NO" id="ePs-93-vaz">
-                                <rect key="frame" x="16" y="126" width="343" height="265"/>
+                                <rect key="frame" x="16" y="170" width="343" height="221"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -108,6 +114,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ep2-D8-HNV"/>
                     </view>
+                    <navigationItem key="navigationItem" id="itN-GJ-mAx"/>
                     <connections>
                         <outlet property="emailText" destination="2iQ-o7-cFR" id="H2Z-7e-XSc"/>
                         <outlet property="nameText" destination="duR-rw-kJ5" id="c99-Jj-UYb"/>
@@ -116,7 +123,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aOp-eZ-HqV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2113" y="81"/>
+            <point key="canvasLocation" x="3052" y="80.50974512743629"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="WPZ-3S-R9k">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tUC-vk-msx" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ipt-BU-mwa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="uMB-fL-QgS" kind="relationship" relationship="rootViewController" id="xNA-Ab-1fH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nN7-ZU-jiL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2112.8000000000002" y="80.50974512743629"/>
         </scene>
     </scenes>
     <resources>

@@ -51,14 +51,14 @@ class ViewController: UIViewController, GIDSignInDelegate{
     
         getLoginDetails()
         
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "LoggedIn")
-        self.navigationController?.pushViewController(vc, animated: true)
         
        
     }
     
    func getLoginDetails() {
+ let storyboard = UIStoryboard(name: "Main", bundle: nil)
+ let vc = storyboard.instantiateViewController(withIdentifier: "LoggedIn")
+ present(vc, animated: true)
  
  
     }
@@ -82,18 +82,22 @@ class ViewController: UIViewController, GIDSignInDelegate{
 //         // Perform any operations on signed in user here.
 //         let userId = user.userID                  // For client-side use only!
 //         let idToken = user.authentication.idToken // Safe to send to the server
-         let fullName = user.profile.name
-         let givenName = user.profile.givenName
+        
+       let fullName = user.profile.name
+        let givenName = user.profile.givenName
 //         let familyName = user.profile.familyName
-         let email = user.profile.email
+        let email = user.profile.email
         print("fullName is \(String(describing: fullName))")
         print("givenName is \(String(describing: givenName))")
         print("Email is\(String(describing: email))")
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "LoggedIn") as! HomeViewController
-        vc.emailText.text = email
-        vc.nameText.text = fullName
-        vc.welcomeLabel.text = "Logged In using Google Account"
+        vc.email = String(describing: email)
+        vc.name =  String(describing: fullName)
+        vc.passed = true
+        vc.welcome = "Logged In using Google Account"
+        
+        present(vc, animated: true)
     }
     
     
