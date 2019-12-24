@@ -48,11 +48,15 @@ class ViewController: UIViewController, GIDSignInDelegate{
 
 
     }
-    
-        getLoginDetails()
-        
+        var helloWorldTimer = Timer.scheduledTimer(timeInterval: 10.0, target: self, selector: #selector(ViewController.sayHello), userInfo: nil, repeats: false)
+
         
        
+    }
+
+    @objc func sayHello()
+    {
+        getLoginDetails()
     }
     
    func getLoginDetails() {

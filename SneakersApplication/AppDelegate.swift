@@ -22,6 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         _ application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
     ) -> Bool {
+    Thread.sleep(forTimeInterval: 1)
         // Override point for customization after application launch.
         ApplicationDelegate.shared.application(
                application,
