@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SneakersApplication" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SplashScreen" translatesAutoresizingMaskIntoConstraints="NO" id="KBX-ml-oma">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UWq-5W-h3X">
+                                <rect key="frame" x="16" y="516" width="343" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Uot-60-QK3"/>
+                                </constraints>
+                                <state key="normal" title="Welcome" image="FacebookLoginButton"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sPA-am-RY4">
+                                <rect key="frame" x="16" y="587" width="343" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="g9B-e4-gyy"/>
+                                </constraints>
+                                <state key="normal" image="GoogleSignUpDark"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sPA-am-RY4" secondAttribute="trailing" constant="16" id="6AJ-nC-yWD"/>
+                            <constraint firstItem="KBX-ml-oma" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="P9B-Ce-p6z"/>
+                            <constraint firstItem="sPA-am-RY4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="SMp-ri-Aai"/>
+                            <constraint firstItem="UWq-5W-h3X" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="WNu-L7-W1Q"/>
+                            <constraint firstItem="KBX-ml-oma" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="XqT-Sb-wGS"/>
+                            <constraint firstItem="sPA-am-RY4" firstAttribute="top" secondItem="UWq-5W-h3X" secondAttribute="bottom" constant="11" id="exC-LN-4K6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sPA-am-RY4" secondAttribute="bottom" constant="20" id="iqw-5Y-x1z"/>
+                            <constraint firstItem="KBX-ml-oma" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="sxx-7Z-aet"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UWq-5W-h3X" secondAttribute="trailing" constant="16" id="wMf-9o-KSv"/>
+                            <constraint firstItem="KBX-ml-oma" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="wXP-3k-Kd9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="20l-kx-OzH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="263" y="81"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="Pch-Fe-baR">
+            <objects>
+                <viewController storyboardIdentifier="LoggedIn" useStoryboardIdentifierAsRestorationIdentifier="YES" id="uMB-fL-QgS" customClass="HomeViewController" customModule="SneakersApplication" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NEX-69-Myg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Muhammad Ahmar Hassan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="duR-rw-kJ5">
+                                <rect key="frame" x="16" y="385" width="343" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="tAA-zv-Jy1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iamahmerr@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2iQ-o7-cFR">
+                                <rect key="frame" x="16" y="453" width="343" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Js8-bZ-Dbs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Logged in Using facebook services. " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F6T-Ih-9pp">
+                                <rect key="frame" x="16" y="87" width="343" height="20.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="DP" translatesAutoresizingMaskIntoConstraints="NO" id="ePs-93-vaz">
+                                <rect key="frame" x="16" y="126" width="343" height="265"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Ep2-D8-HNV" firstAttribute="trailing" secondItem="ePs-93-vaz" secondAttribute="trailing" constant="16" id="0zh-ET-vre"/>
+                            <constraint firstItem="2iQ-o7-cFR" firstAttribute="top" secondItem="duR-rw-kJ5" secondAttribute="bottom" constant="8" id="1x8-ZR-P9e"/>
+                            <constraint firstItem="F6T-Ih-9pp" firstAttribute="leading" secondItem="Ep2-D8-HNV" secondAttribute="leading" constant="16" id="4iu-Bb-PVW"/>
+                            <constraint firstItem="ePs-93-vaz" firstAttribute="leading" secondItem="Ep2-D8-HNV" secondAttribute="leading" constant="16" id="7PA-AL-fXK"/>
+                            <constraint firstItem="ePs-93-vaz" firstAttribute="top" secondItem="F6T-Ih-9pp" secondAttribute="bottom" constant="18.5" id="AwC-PZ-mFL"/>
+                            <constraint firstItem="2iQ-o7-cFR" firstAttribute="leading" secondItem="Ep2-D8-HNV" secondAttribute="leading" constant="16" id="GmC-TZ-JcK"/>
+                            <constraint firstItem="duR-rw-kJ5" firstAttribute="leading" secondItem="Ep2-D8-HNV" secondAttribute="leading" constant="16" id="L4Y-x6-uHw"/>
+                            <constraint firstItem="Ep2-D8-HNV" firstAttribute="bottom" secondItem="2iQ-o7-cFR" secondAttribute="bottom" constant="154" id="NUi-dy-io8"/>
+                            <constraint firstItem="F6T-Ih-9pp" firstAttribute="top" secondItem="Ep2-D8-HNV" secondAttribute="top" constant="87" id="VSZ-nm-TWh"/>
+                            <constraint firstItem="Ep2-D8-HNV" firstAttribute="trailing" secondItem="duR-rw-kJ5" secondAttribute="trailing" constant="16" id="Z54-Ng-MdH"/>
+                            <constraint firstItem="Ep2-D8-HNV" firstAttribute="trailing" secondItem="F6T-Ih-9pp" secondAttribute="trailing" constant="16" id="aaQ-w3-VbT"/>
+                            <constraint firstItem="Ep2-D8-HNV" firstAttribute="trailing" secondItem="2iQ-o7-cFR" secondAttribute="trailing" constant="16" id="frg-WF-hgM"/>
+                            <constraint firstItem="2iQ-o7-cFR" firstAttribute="top" secondItem="ePs-93-vaz" secondAttribute="bottom" constant="62" id="pYT-QR-5Vs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ep2-D8-HNV"/>
+                    </view>
+                    <connections>
+                        <outlet property="emailText" destination="2iQ-o7-cFR" id="H2Z-7e-XSc"/>
+                        <outlet property="nameText" destination="duR-rw-kJ5" id="c99-Jj-UYb"/>
+                        <outlet property="welcomeLabel" destination="F6T-Ih-9pp" id="3X4-ic-h1l"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aOp-eZ-HqV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2113" y="81"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="DP" width="960" height="960"/>
+        <image name="FacebookLoginButton" width="600" height="145"/>
+        <image name="GoogleSignUpDark" width="580" height="121"/>
+        <image name="SplashScreen" width="591" height="1280"/>
+    </resources>
+</document>
