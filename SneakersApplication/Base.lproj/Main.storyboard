@@ -23,7 +23,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="Uot-60-QK3"/>
                                 </constraints>
-                                <state key="normal" title="Welcome" image="FacebookLoginButton"/>
+                                <state key="normal" title="Welcome" image="facebook button"/>
                                 <connections>
                                     <action selector="loginwithFacebook:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UyD-PA-cEm"/>
                                 </connections>
@@ -33,7 +33,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="g9B-e4-gyy"/>
                                 </constraints>
-                                <state key="normal" image="GoogleSignUpDark"/>
+                                <state key="normal" image="google button"/>
                                 <connections>
                                     <action selector="loginWithInstagram:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dtG-RW-mWs"/>
                                 </connections>
@@ -146,8 +146,8 @@
     </scenes>
     <resources>
         <image name="DP" width="960" height="960"/>
-        <image name="FacebookLoginButton" width="600" height="145"/>
-        <image name="GoogleSignUpDark" width="580" height="121"/>
         <image name="SplashScreen" width="591" height="1280"/>
+        <image name="facebook button" width="499" height="46"/>
+        <image name="google button" width="495" height="44"/>
     </resources>
 </document>
