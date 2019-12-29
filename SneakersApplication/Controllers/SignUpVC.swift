@@ -96,8 +96,9 @@ class SignUpVC: UIViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "LoggedIn") as! HomeViewController
         vc.modalPresentationStyle = .fullScreen
-        self.navigationController?.pushViewController(vc, animated: true)
+         self.navigationController?.pushViewController(vc, animated: true)
     }
+    
     /*
     // MARK: - Navigation
 

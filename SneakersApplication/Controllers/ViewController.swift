@@ -7,10 +7,13 @@
 //
 
 import UIKit
-import FacebookCore
+import Firebase
+import FirebaseAuth
 import FacebookLogin
+import FacebookCore
 import GoogleSignIn
 import FBSDKCoreKit
+import FBSDKLoginKit
 
 
 
@@ -22,38 +25,15 @@ class ViewController: UIViewController, GIDSignInDelegate{
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        FirebaseApp.configure()
         GIDSignIn.sharedInstance().delegate=self
         // Do any additional setup after loading the view.
     }
 
     @IBAction func loginwithFacebook(_ sender: Any) {
-    /*
-        let loginManager = LoginManager()
-        loginManager.logIn(
-        permissions: [.publicProfile, .email],
-        viewController: self
-    ) { (result) in
-        switch result {
-        case .cancelled:
-            print("Facebook Authentication Cancelled")
-            break
-
-        case .failed(let error):
-            print("Facebook Authentication failed \(error.localizedDescription)")
-            break
-
-        case .success(let grantedPermission, _, let accessToken):
-            print("Access Toekn is \(accessToken)")
-            print("Granted permission \(grantedPermission)")
-
-        }
-
-
-    }
-        var helloWorldTimer = Timer.scheduledTimer(timeInterval: 10.0, target: self, selector: #selector(ViewController.sayHello), userInfo: nil, repeats: false)
-
-        */
-       getLoginDetails()
+    
+       
+      
     }
 
     @objc func sayHello()
@@ -119,3 +99,30 @@ class ViewController: UIViewController, GIDSignInDelegate{
     
 }
 
+
+//let loginManager =
+//      loginManager.logIn(
+//      permissions: [.publicProfile, .email],
+//      viewController: self
+//  ) { (result) in
+//      switch result {
+//      case .cancelled:
+//          print("Facebook Authentication Cancelled")
+//          break
+//
+//      case .failed(let error):
+//          print("Facebook Authentication failed \(error.localizedDescription)")
+//          break
+//
+//      case .success(let grantedPermission, _, let accessToken):
+//          print("Access Toekn is \(accessToken)")
+//          print("Granted permission \(grantedPermission)")
+//
+//      }
+//
+//
+//  }
+//      var helloWorldTimer = Timer.scheduledTimer(timeInterval: 10.0, target: self, selector: #selector(ViewController.sayHello), userInfo: nil, repeats: false)
+//
+//
+//     getLoginDetails()

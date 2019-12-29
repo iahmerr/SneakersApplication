@@ -42,6 +42,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         // Use this method to select a configuration to create the new scene with.
         return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
     }
+    func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith result: FBSDKLoginManagerLoginResult!, error: Error!) {
+      if let error = error {
+        print(error.localizedDescription)
+        return
+      }
+      // ...
+    }
   
 
   func application(_ application: UIApplication,

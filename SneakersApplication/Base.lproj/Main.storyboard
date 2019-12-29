@@ -19,17 +19,17 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="15L-Pc-Xlz">
-                                <rect key="frame" x="0.0" y="557" width="375" height="90"/>
+                                <rect key="frame" x="0.0" y="467" width="375" height="180"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UWq-5W-h3X">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="46"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="92"/>
                                         <state key="normal" title="Welcome" image="facebook button"/>
                                         <connections>
                                             <action selector="loginwithFacebook:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UyD-PA-cEm"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sPA-am-RY4">
-                                        <rect key="frame" x="0.0" y="46" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="92" width="375" height="88"/>
                                         <state key="normal" image="google button"/>
                                         <connections>
                                             <action selector="loginWithInstagram:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dtG-RW-mWs"/>
@@ -38,7 +38,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="EQC-WX-XhV">
-                                <rect key="frame" x="0.0" y="507" width="375" height="50"/>
+                                <rect key="frame" x="0.0" y="417" width="375" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Bd-lt-OK1">
                                         <rect key="frame" x="0.0" y="0.0" width="186.5" height="50"/>
@@ -182,8 +182,8 @@
                         <outlet property="email" destination="XNT-BP-r0n" id="odL-Sa-O64"/>
                         <outlet property="firstName" destination="gNR-zz-ErX" id="2WQ-se-7q4"/>
                         <outlet property="lastName" destination="ZpX-Ag-10i" id="RNA-bq-8iN"/>
-                        <outlet property="number" destination="iBN-3u-EZ2" id="6t4-D0-G7q"/>
-                        <outlet property="password" destination="vdT-8b-o0s" id="W4E-UM-GmU"/>
+                        <outlet property="number" destination="vdT-8b-o0s" id="AcB-UX-qza"/>
+                        <outlet property="password" destination="iBN-3u-EZ2" id="ZsU-jy-zrq"/>
                         <outlet property="showError" destination="5TR-dO-SSI" id="Cge-IA-60f"/>
                     </connections>
                 </viewController>
@@ -230,17 +230,27 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AyZ-i1-V1A">
+                                <rect key="frame" x="8" y="194.5" width="359" height="26.5"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
+                                <color key="textColor" red="0.55525879929999999" green="0.080453535100000001" blue="0.14034784049999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="r91-hr-oUV" firstAttribute="top" secondItem="uIE-eg-ejJ" secondAttribute="top" constant="20" id="KZa-sZ-RIh"/>
+                            <constraint firstItem="uIE-eg-ejJ" firstAttribute="trailing" secondItem="AyZ-i1-V1A" secondAttribute="trailing" constant="8" id="Yon-nv-8dZ"/>
                             <constraint firstItem="uIE-eg-ejJ" firstAttribute="trailing" secondItem="r91-hr-oUV" secondAttribute="trailing" constant="8" id="hae-26-Olw"/>
                             <constraint firstItem="r91-hr-oUV" firstAttribute="leading" secondItem="uIE-eg-ejJ" secondAttribute="leading" constant="8" id="jd2-jA-ok7"/>
+                            <constraint firstItem="AyZ-i1-V1A" firstAttribute="top" secondItem="r91-hr-oUV" secondAttribute="bottom" constant="10" id="l02-02-Kmu"/>
+                            <constraint firstItem="AyZ-i1-V1A" firstAttribute="leading" secondItem="uIE-eg-ejJ" secondAttribute="leading" constant="8" id="y07-PE-QRb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="uIE-eg-ejJ"/>
                     </view>
                     <connections>
                         <outlet property="emailText" destination="U4l-1J-SGf" id="twz-bd-Ush"/>
+                        <outlet property="errorLabel" destination="AyZ-i1-V1A" id="goG-q7-yFw"/>
                         <outlet property="passwordText" destination="gAM-Kp-EWK" id="bZ9-zF-3l8"/>
                     </connections>
                 </viewController>
