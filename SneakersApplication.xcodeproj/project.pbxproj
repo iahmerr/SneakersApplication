@@ -3,16 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27C95A3C6058EB28054DCA03 /* Pods_SneakersApplication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EE4DC7E05BBBBF2BD8F5C3D /* Pods_SneakersApplication.framework */; };
 		C301E34023B1833800ECCC7A /* GoogleSignIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C301E33E23B1833800ECCC7A /* GoogleSignIn.framework */; };
 		C301E34123B1833800ECCC7A /* GoogleSignInDependencies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C301E33F23B1833800ECCC7A /* GoogleSignInDependencies.framework */; };
 		C301E34323B1838300ECCC7A /* GoogleSignIn.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C301E33E23B1833800ECCC7A /* GoogleSignIn.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C301E34423B1838300ECCC7A /* GoogleSignInDependencies.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C301E33F23B1833800ECCC7A /* GoogleSignInDependencies.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C301E34623B183CC00ECCC7A /* GoogleSDK in Resources */ = {isa = PBXBuildFile; fileRef = C301E34523B183CC00ECCC7A /* GoogleSDK */; };
 		C301E34A23B19FCF00ECCC7A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C301E34923B19FCF00ECCC7A /* HomeViewController.swift */; };
+		C3A1B55123B8628100C3A758 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A1B55023B8628100C3A758 /* Utilities.swift */; };
 		C3B4956223B145FD00F74665 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3B4956123B145FD00F74665 /* Assets.xcassets */; };
 		C3C6CB6E23B16E01007998C2 /* GoogleSignIn.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C3C6CB6B23B16DF0007998C2 /* GoogleSignIn.bundle */; };
 		C3C6CB7023B16E1A007998C2 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3C6CB6F23B16E1A007998C2 /* LocalAuthentication.framework */; };
@@ -26,9 +27,11 @@
 		C3F2DC8223AE8BCE0029ECF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3F2DC8023AE8BCE0029ECF0 /* LaunchScreen.storyboard */; };
 		C3F2DC8D23AE8BCE0029ECF0 /* SneakersApplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F2DC8C23AE8BCE0029ECF0 /* SneakersApplicationTests.swift */; };
 		C3F2DC9823AE8BCF0029ECF0 /* SneakersApplicationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F2DC9723AE8BCF0029ECF0 /* SneakersApplicationUITests.swift */; };
-		C3F2DCD223AF3F400029ECF0 /* FacebookCore in Frameworks */ = {isa = PBXBuildFile; productRef = C3F2DCD123AF3F400029ECF0 /* FacebookCore */; };
-		C3F2DCD423AF3F400029ECF0 /* FacebookLogin in Frameworks */ = {isa = PBXBuildFile; productRef = C3F2DCD323AF3F400029ECF0 /* FacebookLogin */; };
-		C3F2DCD623AF3F400029ECF0 /* FacebookShare in Frameworks */ = {isa = PBXBuildFile; productRef = C3F2DCD523AF3F400029ECF0 /* FacebookShare */; };
+		C3F60BF523B6A93A00A41E3B /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F60BF423B6A93A00A41E3B /* SignUpVC.swift */; };
+		C3F60BF723B6A95600A41E3B /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F60BF623B6A95600A41E3B /* LoginVC.swift */; };
+		C3F60BFA23B7825200A41E3B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C3F60BF923B7825100A41E3B /* GoogleService-Info.plist */; };
+		DCA844EA5A8B40D98905EF00 /* Pods_SneakersApplication_SneakersApplicationUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCA7ED5AC5EEAB9D19484AA4 /* Pods_SneakersApplication_SneakersApplicationUITests.framework */; };
+		E1A4CB2B6F6907A7ACECE035 /* Pods_SneakersApplicationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68A3CA6CB49459FB440A6603 /* Pods_SneakersApplicationTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,10 +77,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2EE4DC7E05BBBBF2BD8F5C3D /* Pods_SneakersApplication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SneakersApplication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52522F38EC7B744993A2BD72 /* Pods-SneakersApplication-SneakersApplicationUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SneakersApplication-SneakersApplicationUITests.debug.xcconfig"; path = "Target Support Files/Pods-SneakersApplication-SneakersApplicationUITests/Pods-SneakersApplication-SneakersApplicationUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		68A3CA6CB49459FB440A6603 /* Pods_SneakersApplicationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SneakersApplicationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B599B7722D20BA715747368 /* Pods-SneakersApplicationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SneakersApplicationTests.debug.xcconfig"; path = "Target Support Files/Pods-SneakersApplicationTests/Pods-SneakersApplicationTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BFF84860AB16BDE232252364 /* Pods-SneakersApplication.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SneakersApplication.debug.xcconfig"; path = "Target Support Files/Pods-SneakersApplication/Pods-SneakersApplication.debug.xcconfig"; sourceTree = "<group>"; };
 		C301E33E23B1833800ECCC7A /* GoogleSignIn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSignIn.framework; path = ../../../../Downloads/google_signin_sdk_5_0_2/GoogleSignIn.framework; sourceTree = "<group>"; };
 		C301E33F23B1833800ECCC7A /* GoogleSignInDependencies.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSignInDependencies.framework; path = ../../../../Downloads/google_signin_sdk_5_0_2/GoogleSignInDependencies.framework; sourceTree = "<group>"; };
-		C301E34523B183CC00ECCC7A /* GoogleSDK */ = {isa = PBXFileReference; lastKnownFileType = folder; path = GoogleSDK; sourceTree = "<group>"; };
 		C301E34923B19FCF00ECCC7A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		C3A1B55023B8628100C3A758 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		C3B4956123B145FD00F74665 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		C3C6CB6B23B16DF0007998C2 /* GoogleSignIn.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleSignIn.bundle; path = ../../../../Downloads/google_signin_sdk_5_0_2/GoogleSignIn.bundle; sourceTree = "<group>"; };
 		C3C6CB6F23B16E1A007998C2 /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
@@ -98,6 +106,13 @@
 		C3F2DC9323AE8BCF0029ECF0 /* SneakersApplicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SneakersApplicationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3F2DC9723AE8BCF0029ECF0 /* SneakersApplicationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SneakersApplicationUITests.swift; sourceTree = "<group>"; };
 		C3F2DC9923AE8BCF0029ECF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3F60BF423B6A93A00A41E3B /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		C3F60BF623B6A95600A41E3B /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		C3F60BF923B7825100A41E3B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C5B53CB78DEC809A11222DF4 /* Pods-SneakersApplication.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SneakersApplication.release.xcconfig"; path = "Target Support Files/Pods-SneakersApplication/Pods-SneakersApplication.release.xcconfig"; sourceTree = "<group>"; };
+		DCA7ED5AC5EEAB9D19484AA4 /* Pods_SneakersApplication_SneakersApplicationUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SneakersApplication_SneakersApplicationUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E74B110340FF8C43672A0CD2 /* Pods-SneakersApplication-SneakersApplicationUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SneakersApplication-SneakersApplicationUITests.release.xcconfig"; path = "Target Support Files/Pods-SneakersApplication-SneakersApplicationUITests/Pods-SneakersApplication-SneakersApplicationUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FFAC923528213621C173D64F /* Pods-SneakersApplicationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SneakersApplicationTests.release.xcconfig"; path = "Target Support Files/Pods-SneakersApplicationTests/Pods-SneakersApplicationTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,9 +126,7 @@
 				C3C6CB7423B16E42007998C2 /* AuthenticationServices.framework in Frameworks */,
 				C3C6CB7223B16E28007998C2 /* SafariServices.framework in Frameworks */,
 				C3C6CB7023B16E1A007998C2 /* LocalAuthentication.framework in Frameworks */,
-				C3F2DCD423AF3F400029ECF0 /* FacebookLogin in Frameworks */,
-				C3F2DCD223AF3F400029ECF0 /* FacebookCore in Frameworks */,
-				C3F2DCD623AF3F400029ECF0 /* FacebookShare in Frameworks */,
+				27C95A3C6058EB28054DCA03 /* Pods_SneakersApplication.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +134,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1A4CB2B6F6907A7ACECE035 /* Pods_SneakersApplicationTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,22 +142,44 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCA844EA5A8B40D98905EF00 /* Pods_SneakersApplication_SneakersApplicationUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		67163EE6D2293AF4AE77B09B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BFF84860AB16BDE232252364 /* Pods-SneakersApplication.debug.xcconfig */,
+				C5B53CB78DEC809A11222DF4 /* Pods-SneakersApplication.release.xcconfig */,
+				52522F38EC7B744993A2BD72 /* Pods-SneakersApplication-SneakersApplicationUITests.debug.xcconfig */,
+				E74B110340FF8C43672A0CD2 /* Pods-SneakersApplication-SneakersApplicationUITests.release.xcconfig */,
+				8B599B7722D20BA715747368 /* Pods-SneakersApplicationTests.debug.xcconfig */,
+				FFAC923528213621C173D64F /* Pods-SneakersApplicationTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C3A1B54F23B8625B00C3A758 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C3A1B55023B8628100C3A758 /* Utilities.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		C3F2DC6923AE8BC90029ECF0 = {
 			isa = PBXGroup;
 			children = (
-				C301E34523B183CC00ECCC7A /* GoogleSDK */,
 				C3C6CB6B23B16DF0007998C2 /* GoogleSignIn.bundle */,
 				C3F2DC7423AE8BC90029ECF0 /* SneakersApplication */,
 				C3F2DC8B23AE8BCE0029ECF0 /* SneakersApplicationTests */,
 				C3F2DC9623AE8BCF0029ECF0 /* SneakersApplicationUITests */,
 				C3F2DC7323AE8BC90029ECF0 /* Products */,
 				C3F2DCA823AEC6060029ECF0 /* Frameworks */,
+				67163EE6D2293AF4AE77B09B /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -160,14 +196,15 @@
 		C3F2DC7423AE8BC90029ECF0 /* SneakersApplication */ = {
 			isa = PBXGroup;
 			children = (
+				C3A1B54F23B8625B00C3A758 /* Views */,
 				C3F2DC7523AE8BC90029ECF0 /* AppDelegate.swift */,
 				C3F2DC7723AE8BC90029ECF0 /* SceneDelegate.swift */,
-				C301E34923B19FCF00ECCC7A /* HomeViewController.swift */,
-				C3F2DC7923AE8BC90029ECF0 /* ViewController.swift */,
+				C3F60BF823B6A99A00A41E3B /* Controllers */,
 				C3F2DC7B23AE8BC90029ECF0 /* Main.storyboard */,
 				C3F2DC8023AE8BCE0029ECF0 /* LaunchScreen.storyboard */,
 				C3B4956123B145FD00F74665 /* Assets.xcassets */,
 				C3F2DC8323AE8BCE0029ECF0 /* Info.plist */,
+				C3F60BF923B7825100A41E3B /* GoogleService-Info.plist */,
 			);
 			path = SneakersApplication;
 			sourceTree = "<group>";
@@ -200,8 +237,22 @@
 				C3C6CB7323B16E42007998C2 /* AuthenticationServices.framework */,
 				C3C6CB7123B16E28007998C2 /* SafariServices.framework */,
 				C3C6CB6F23B16E1A007998C2 /* LocalAuthentication.framework */,
+				2EE4DC7E05BBBBF2BD8F5C3D /* Pods_SneakersApplication.framework */,
+				DCA7ED5AC5EEAB9D19484AA4 /* Pods_SneakersApplication_SneakersApplicationUITests.framework */,
+				68A3CA6CB49459FB440A6603 /* Pods_SneakersApplicationTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C3F60BF823B6A99A00A41E3B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C301E34923B19FCF00ECCC7A /* HomeViewController.swift */,
+				C3F2DC7923AE8BC90029ECF0 /* ViewController.swift */,
+				C3F60BF423B6A93A00A41E3B /* SignUpVC.swift */,
+				C3F60BF623B6A95600A41E3B /* LoginVC.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,11 +262,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C3F2DC9C23AE8BCF0029ECF0 /* Build configuration list for PBXNativeTarget "SneakersApplication" */;
 			buildPhases = (
+				C9A56044B9507A390056DE7C /* [CP] Check Pods Manifest.lock */,
 				C3F2DC6E23AE8BC90029ECF0 /* Sources */,
 				C3F2DC6F23AE8BC90029ECF0 /* Frameworks */,
 				C3F2DC7023AE8BC90029ECF0 /* Resources */,
 				C3C6CB3A23B15CE3007998C2 /* Embed PlugIns */,
 				C3C6CB3B23B15CE3007998C2 /* Embed Frameworks */,
+				C169F942CD30515343D2A0CB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -223,9 +276,6 @@
 			);
 			name = SneakersApplication;
 			packageProductDependencies = (
-				C3F2DCD123AF3F400029ECF0 /* FacebookCore */,
-				C3F2DCD323AF3F400029ECF0 /* FacebookLogin */,
-				C3F2DCD523AF3F400029ECF0 /* FacebookShare */,
 			);
 			productName = SneakersApplication;
 			productReference = C3F2DC7223AE8BC90029ECF0 /* SneakersApplication.app */;
@@ -235,6 +285,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C3F2DC9F23AE8BCF0029ECF0 /* Build configuration list for PBXNativeTarget "SneakersApplicationTests" */;
 			buildPhases = (
+				5B1B97835225D9AE786F05C2 /* [CP] Check Pods Manifest.lock */,
 				C3F2DC8423AE8BCE0029ECF0 /* Sources */,
 				C3F2DC8523AE8BCE0029ECF0 /* Frameworks */,
 				C3F2DC8623AE8BCE0029ECF0 /* Resources */,
@@ -253,9 +304,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C3F2DCA223AE8BCF0029ECF0 /* Build configuration list for PBXNativeTarget "SneakersApplicationUITests" */;
 			buildPhases = (
+				092CD897BB8CB9245989EF17 /* [CP] Check Pods Manifest.lock */,
 				C3F2DC8F23AE8BCF0029ECF0 /* Sources */,
 				C3F2DC9023AE8BCF0029ECF0 /* Frameworks */,
 				C3F2DC9123AE8BCF0029ECF0 /* Resources */,
+				3EBF7D58751B7A757DA3122B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -300,7 +353,6 @@
 			);
 			mainGroup = C3F2DC6923AE8BC90029ECF0;
 			packageReferences = (
-				C3F2DCD023AF3F3F0029ECF0 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
 			);
 			productRefGroup = C3F2DC7323AE8BC90029ECF0 /* Products */;
 			projectDirPath = "";
@@ -322,7 +374,7 @@
 				C3F2DC8223AE8BCE0029ECF0 /* LaunchScreen.storyboard in Resources */,
 				C3B4956223B145FD00F74665 /* Assets.xcassets in Resources */,
 				C3F2DC7D23AE8BC90029ECF0 /* Main.storyboard in Resources */,
-				C301E34623B183CC00ECCC7A /* GoogleSDK in Resources */,
+				C3F60BFA23B7825200A41E3B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +394,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		092CD897BB8CB9245989EF17 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SneakersApplication-SneakersApplicationUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3EBF7D58751B7A757DA3122B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SneakersApplication-SneakersApplicationUITests/Pods-SneakersApplication-SneakersApplicationUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SneakersApplication-SneakersApplicationUITests/Pods-SneakersApplication-SneakersApplicationUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SneakersApplication-SneakersApplicationUITests/Pods-SneakersApplication-SneakersApplicationUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B1B97835225D9AE786F05C2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SneakersApplicationTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C169F942CD30515343D2A0CB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SneakersApplication/Pods-SneakersApplication-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SneakersApplication/Pods-SneakersApplication-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SneakersApplication/Pods-SneakersApplication-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9A56044B9507A390056DE7C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SneakersApplication-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C3F2DC6E23AE8BC90029ECF0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -349,7 +504,10 @@
 			files = (
 				C3F2DC7A23AE8BC90029ECF0 /* ViewController.swift in Sources */,
 				C3F2DC7623AE8BC90029ECF0 /* AppDelegate.swift in Sources */,
+				C3A1B55123B8628100C3A758 /* Utilities.swift in Sources */,
+				C3F60BF723B6A95600A41E3B /* LoginVC.swift in Sources */,
 				C3F2DC7823AE8BC90029ECF0 /* SceneDelegate.swift in Sources */,
+				C3F60BF523B6A93A00A41E3B /* SignUpVC.swift in Sources */,
 				C301E34A23B19FCF00ECCC7A /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -441,6 +599,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -459,6 +618,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -501,6 +661,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -512,6 +673,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -521,24 +683,16 @@
 		};
 		C3F2DC9D23AE8BCF0029ECF0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFF84860AB16BDE232252364 /* Pods-SneakersApplication.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UZJNHCBBYB;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/SneakersApplication",
-					"$(PROJECT_DIR)/GoogleSDK",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = SneakersApplication/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				OTHER_LDFLAGS = (
-					"$(OTHER_LDFLAGS)",
-					"-ObjC",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.iahmerr.SneakersApplication;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_REFLECTION_METADATA_LEVEL = none;
@@ -549,24 +703,16 @@
 		};
 		C3F2DC9E23AE8BCF0029ECF0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5B53CB78DEC809A11222DF4 /* Pods-SneakersApplication.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UZJNHCBBYB;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/SneakersApplication",
-					"$(PROJECT_DIR)/GoogleSDK",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = SneakersApplication/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				OTHER_LDFLAGS = (
-					"$(OTHER_LDFLAGS)",
-					"-ObjC",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.iahmerr.SneakersApplication;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_REFLECTION_METADATA_LEVEL = none;
@@ -577,6 +723,7 @@
 		};
 		C3F2DCA023AE8BCF0029ECF0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B599B7722D20BA715747368 /* Pods-SneakersApplicationTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -599,6 +746,7 @@
 		};
 		C3F2DCA123AE8BCF0029ECF0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFAC923528213621C173D64F /* Pods-SneakersApplicationTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -621,6 +769,7 @@
 		};
 		C3F2DCA323AE8BCF0029ECF0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52522F38EC7B744993A2BD72 /* Pods-SneakersApplication-SneakersApplicationUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -641,6 +790,7 @@
 		};
 		C3F2DCA423AE8BCF0029ECF0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E74B110340FF8C43672A0CD2 /* Pods-SneakersApplication-SneakersApplicationUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -699,35 +849,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		C3F2DCD023AF3F3F0029ECF0 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/facebook/facebook-ios-sdk";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.13.1;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		C3F2DCD123AF3F400029ECF0 /* FacebookCore */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = C3F2DCD023AF3F3F0029ECF0 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
-			productName = FacebookCore;
-		};
-		C3F2DCD323AF3F400029ECF0 /* FacebookLogin */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = C3F2DCD023AF3F3F0029ECF0 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
-			productName = FacebookLogin;
-		};
-		C3F2DCD523AF3F400029ECF0 /* FacebookShare */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = C3F2DCD023AF3F3F0029ECF0 /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
-			productName = FacebookShare;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C3F2DC6A23AE8BC90029ECF0 /* Project object */;
 }

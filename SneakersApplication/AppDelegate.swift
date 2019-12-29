@@ -9,6 +9,10 @@
 import UIKit
 import FacebookCore
 import GoogleSignIn
+import FBSDKCoreKit
+import FBSDKLoginKit
+import Firebase
+
 
 
 @UIApplicationMain
@@ -23,11 +27,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
     ) -> Bool {
     Thread.sleep(forTimeInterval: 1)
+    FirebaseApp.configure()
         // Override point for customization after application launch.
-        ApplicationDelegate.shared.application(
-               application,
-               didFinishLaunchingWithOptions: launchOptions
-           )
+        
     GIDSignIn.sharedInstance()?.clientID = "1047773442594-jrsr54c6cjcap4dqh8fbhnbmu5olhltv.apps.googleusercontent.com"
     GIDSignIn.sharedInstance()?.delegate = self
         return true
@@ -40,11 +42,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         // Use this method to select a configuration to create the new scene with.
         return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
     }
-    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]
-    ) -> Bool {
-        return ApplicationDelegate.shared.application(app, open: url, options: options)
-        
-    }
+  
 
   func application(_ application: UIApplication,
                    open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
