@@ -13,6 +13,7 @@ import FirebaseFirestore
 
 class SignUpVC: UIViewController {
 
+    @IBOutlet weak var registerButton: UIButton!
     @IBOutlet weak var firstName: UITextField!
     @IBOutlet weak var lastName: UITextField!
     @IBOutlet weak var email: UITextField!
@@ -22,10 +23,35 @@ class SignUpVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-     
+        if FirebaseApp.app() == nil {
+            FirebaseApp.configure()
+        }
+        navigationController?.isNavigationBarHidden = false
         showError.alpha = 0
         navigationItem.title = "SignUp"
-        // Do any additional setup after loading the view.
+        firstName.addTarget(self, action: #selector(edited(_:)), for: .editingChanged)
+        
+    }
+    @objc func edited(_ textField: UITextField) {
+        lastName.addTarget(self, action: #selector(lastNameChanged(_:)), for: .editingChanged)
+
+    }
+    @objc func lastNameChanged(_ textField: UITextField) {
+          email.addTarget(self, action: #selector(emailChanged(_:)), for: .editingChanged)
+
+      }
+    @objc func emailChanged(_ textField: UITextField) {
+        number.addTarget(self, action: #selector(numberChanged(_:)), for: .editingChanged)
+
+    }
+    @objc func numberChanged(_ textField: UITextField) {
+        password.addTarget(self, action: #selector(passwordChanged(_:)), for: .editingChanged)
+
+    }
+    @objc func passwordChanged(_ textField: UITextField) {
+        registerButton.backgroundColor = .black
+        registerButton.setTitleColor(.white, for: .normal)
+
     }
     
     func ValidateInputs() -> String? {
@@ -66,7 +92,8 @@ class SignUpVC: UIViewController {
         // create user
         Auth.auth().createUser(withEmail: email, password: password) { (result, err) in
             if err != nil {
-                self.ShowError("Error Creating User")
+                self.ShowError(err!.localizedDescription)
+               // print(err?.localizedDescription)
             }
             else {
              
@@ -96,8 +123,9 @@ class SignUpVC: UIViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "LoggedIn") as! HomeViewController
         vc.modalPresentationStyle = .fullScreen
-         self.navigationController?.pushViewController(vc, animated: true)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
+
     
     /*
     // MARK: - Navigation

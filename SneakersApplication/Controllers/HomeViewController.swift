@@ -19,6 +19,7 @@ class HomeViewController: UIViewController {
     var welcome = ""
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         changeLogs()
         self.navigationController?.isNavigationBarHidden = true
         

@@ -8,18 +8,32 @@
 
 import UIKit
 import FirebaseAuth
+import Firebase
 import FirebaseFirestore
 
 class LoginVC: UIViewController {
 
+    @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var emailText: UITextField!
     @IBOutlet weak var passwordText: UITextField!
     @IBOutlet weak var errorLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.isNavigationBarHidden = false
+        if FirebaseApp.app() == nil {
+            FirebaseApp.configure()
+        }
         navigationItem.title = "Log In"
         errorLabel.alpha = 0
+        emailText.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
         // Do any additional setup after loading the view.
+    }
+    @objc func textFieldDidChange(_ textField: UITextField) {
+        passwordText.addTarget(self, action: #selector(doneYO(_:)), for: .editingChanged)
+    }
+    @objc func doneYO(_ textField: UITextField) {
+        loginButton.backgroundColor = UIColor.black
+        loginButton.setTitleColor(.white, for: .normal)
     }
     
 

@@ -8,6 +8,7 @@
 
 import UIKit
 import FacebookCore
+import FirebaseCore
 import GoogleSignIn
 import FBSDKCoreKit
 import FBSDKLoginKit
@@ -27,7 +28,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
     ) -> Bool {
     Thread.sleep(forTimeInterval: 1)
-    FirebaseApp.configure()
+    if FirebaseApp.app() == nil {
+        FirebaseApp.configure()
+    }
         // Override point for customization after application launch.
         
     GIDSignIn.sharedInstance()?.clientID = "1047773442594-jrsr54c6cjcap4dqh8fbhnbmu5olhltv.apps.googleusercontent.com"

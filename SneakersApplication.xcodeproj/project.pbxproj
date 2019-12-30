@@ -14,6 +14,15 @@
 		C301E34423B1838300ECCC7A /* GoogleSignInDependencies.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C301E33F23B1833800ECCC7A /* GoogleSignInDependencies.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C301E34A23B19FCF00ECCC7A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C301E34923B19FCF00ECCC7A /* HomeViewController.swift */; };
 		C3A1B55123B8628100C3A758 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A1B55023B8628100C3A758 /* Utilities.swift */; };
+		C3A1B57123BA312D00C3A758 /* GothamNarrow-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = C3A1B56723BA312100C3A758 /* GothamNarrow-Book.otf */; };
+		C3A1B57223BA312D00C3A758 /* GothamNarrow-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = C3A1B56823BA312300C3A758 /* GothamNarrow-Thin.otf */; };
+		C3A1B57323BA312D00C3A758 /* GothamNarrow-Ultra.otf in Resources */ = {isa = PBXBuildFile; fileRef = C3A1B56923BA312400C3A758 /* GothamNarrow-Ultra.otf */; };
+		C3A1B57423BA312D00C3A758 /* Gotham-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = C3A1B56B23BA312700C3A758 /* Gotham-Thin.otf */; };
+		C3A1B57523BA312D00C3A758 /* Gotham-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = C3A1B56C23BA312800C3A758 /* Gotham-Medium.otf */; };
+		C3A1B57623BA312D00C3A758 /* GothamNarrow-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = C3A1B56D23BA312900C3A758 /* GothamNarrow-Black.otf */; };
+		C3A1B57723BA312D00C3A758 /* Gotham-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = C3A1B56E23BA312A00C3A758 /* Gotham-Book.otf */; };
+		C3A1B57823BA312D00C3A758 /* Gotham-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = C3A1B56F23BA312C00C3A758 /* Gotham-Light.otf */; };
+		C3A1B57923BA312D00C3A758 /* Gotham-Ultra.otf in Resources */ = {isa = PBXBuildFile; fileRef = C3A1B57023BA312D00C3A758 /* Gotham-Ultra.otf */; };
 		C3B4956223B145FD00F74665 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3B4956123B145FD00F74665 /* Assets.xcassets */; };
 		C3C6CB6E23B16E01007998C2 /* GoogleSignIn.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C3C6CB6B23B16DF0007998C2 /* GoogleSignIn.bundle */; };
 		C3C6CB7023B16E1A007998C2 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3C6CB6F23B16E1A007998C2 /* LocalAuthentication.framework */; };
@@ -86,6 +95,15 @@
 		C301E33F23B1833800ECCC7A /* GoogleSignInDependencies.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSignInDependencies.framework; path = ../../../../Downloads/google_signin_sdk_5_0_2/GoogleSignInDependencies.framework; sourceTree = "<group>"; };
 		C301E34923B19FCF00ECCC7A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		C3A1B55023B8628100C3A758 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		C3A1B56723BA312100C3A758 /* GothamNarrow-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamNarrow-Book.otf"; sourceTree = "<group>"; };
+		C3A1B56823BA312300C3A758 /* GothamNarrow-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamNarrow-Thin.otf"; sourceTree = "<group>"; };
+		C3A1B56923BA312400C3A758 /* GothamNarrow-Ultra.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamNarrow-Ultra.otf"; sourceTree = "<group>"; };
+		C3A1B56B23BA312700C3A758 /* Gotham-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-Thin.otf"; sourceTree = "<group>"; };
+		C3A1B56C23BA312800C3A758 /* Gotham-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-Medium.otf"; sourceTree = "<group>"; };
+		C3A1B56D23BA312900C3A758 /* GothamNarrow-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamNarrow-Black.otf"; sourceTree = "<group>"; };
+		C3A1B56E23BA312A00C3A758 /* Gotham-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-Book.otf"; sourceTree = "<group>"; };
+		C3A1B56F23BA312C00C3A758 /* Gotham-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-Light.otf"; sourceTree = "<group>"; };
+		C3A1B57023BA312D00C3A758 /* Gotham-Ultra.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-Ultra.otf"; sourceTree = "<group>"; };
 		C3B4956123B145FD00F74665 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		C3C6CB6B23B16DF0007998C2 /* GoogleSignIn.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleSignIn.bundle; path = ../../../../Downloads/google_signin_sdk_5_0_2/GoogleSignIn.bundle; sourceTree = "<group>"; };
 		C3C6CB6F23B16E1A007998C2 /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
@@ -170,6 +188,22 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		C3A1B56A23BA312700C3A758 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C3A1B56E23BA312A00C3A758 /* Gotham-Book.otf */,
+				C3A1B56F23BA312C00C3A758 /* Gotham-Light.otf */,
+				C3A1B56C23BA312800C3A758 /* Gotham-Medium.otf */,
+				C3A1B56B23BA312700C3A758 /* Gotham-Thin.otf */,
+				C3A1B57023BA312D00C3A758 /* Gotham-Ultra.otf */,
+				C3A1B56D23BA312900C3A758 /* GothamNarrow-Black.otf */,
+				C3A1B56723BA312100C3A758 /* GothamNarrow-Book.otf */,
+				C3A1B56823BA312300C3A758 /* GothamNarrow-Thin.otf */,
+				C3A1B56923BA312400C3A758 /* GothamNarrow-Ultra.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		C3F2DC6923AE8BC90029ECF0 = {
 			isa = PBXGroup;
 			children = (
@@ -196,6 +230,7 @@
 		C3F2DC7423AE8BC90029ECF0 /* SneakersApplication */ = {
 			isa = PBXGroup;
 			children = (
+				C3A1B56A23BA312700C3A758 /* Fonts */,
 				C3A1B54F23B8625B00C3A758 /* Views */,
 				C3F2DC7523AE8BC90029ECF0 /* AppDelegate.swift */,
 				C3F2DC7723AE8BC90029ECF0 /* SceneDelegate.swift */,
@@ -370,11 +405,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3A1B57423BA312D00C3A758 /* Gotham-Thin.otf in Resources */,
+				C3A1B57223BA312D00C3A758 /* GothamNarrow-Thin.otf in Resources */,
 				C3C6CB6E23B16E01007998C2 /* GoogleSignIn.bundle in Resources */,
 				C3F2DC8223AE8BCE0029ECF0 /* LaunchScreen.storyboard in Resources */,
+				C3A1B57823BA312D00C3A758 /* Gotham-Light.otf in Resources */,
+				C3A1B57523BA312D00C3A758 /* Gotham-Medium.otf in Resources */,
+				C3A1B57923BA312D00C3A758 /* Gotham-Ultra.otf in Resources */,
+				C3A1B57323BA312D00C3A758 /* GothamNarrow-Ultra.otf in Resources */,
+				C3A1B57723BA312D00C3A758 /* Gotham-Book.otf in Resources */,
 				C3B4956223B145FD00F74665 /* Assets.xcassets in Resources */,
 				C3F2DC7D23AE8BC90029ECF0 /* Main.storyboard in Resources */,
 				C3F60BFA23B7825200A41E3B /* GoogleService-Info.plist in Resources */,
+				C3A1B57123BA312D00C3A758 /* GothamNarrow-Book.otf in Resources */,
+				C3A1B57623BA312D00C3A758 /* GothamNarrow-Black.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

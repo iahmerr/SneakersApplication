@@ -4,7 +4,7 @@
 //
 //  Created by Ahmer Hassan on 21/12/2019.
 //  Copyright © 2019 Ahmer Hassan. All rights reserved.
-//
+// auth link https://sneakersapplicat-1577135827093.firebaseapp.com/__/auth/handler
 
 import UIKit
 import Firebase
@@ -12,28 +12,28 @@ import FirebaseAuth
 import FacebookLogin
 import FacebookCore
 import GoogleSignIn
-import FBSDKCoreKit
-import FBSDKLoginKit
+import FirebaseCore
 
 
 
 
 
-class ViewController: UIViewController, GIDSignInDelegate{
-  
-    
+class ViewController: UIViewController{
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        FirebaseApp.configure()
-        GIDSignIn.sharedInstance().delegate=self
+        if FirebaseApp.app() == nil {
+            FirebaseApp.configure()
+        }
+      //  fbButton.delegate = self
+        navigationController?.isNavigationBarHidden = true
+      //  GIDSignIn.sharedInstance().delegate=self
         // Do any additional setup after loading the view.
     }
 
     @IBAction func loginwithFacebook(_ sender: Any) {
-    
-       
-      
+ 
     }
 
     @objc func sayHello()
@@ -42,9 +42,7 @@ class ViewController: UIViewController, GIDSignInDelegate{
     }
     
    func getLoginDetails() {
-
- 
- 
+    
     }
    
     @IBAction func signupFirebase(_ sender: Any) {
@@ -66,6 +64,7 @@ class ViewController: UIViewController, GIDSignInDelegate{
         
      
     }
+    /*
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
          if let error = error {
            if (error as NSError).code == GIDSignInErrorCode.hasNoAuthInKeychain.rawValue {
@@ -95,7 +94,19 @@ class ViewController: UIViewController, GIDSignInDelegate{
         
         present(vc, animated: true)
     }
+    func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith result: FBSDKLoginManagerLoginResult!, error: Error!) {
+        if error == nil {
+            let credential = FacebookAuthProvider.credential(withAccessToken: AccessToken.current!.tokenString)
+        }
+        else {
+            print(error.localizedDescription)
+        }
+    }
     
+    func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {
+        print("Log out")
+    }
+    */
     
 }
 

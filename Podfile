@@ -15,6 +15,7 @@ pod 'TinyConstraints'
 pod 'Firebase/Analytics'
 pod 'Firebase/Core'
 pod 'Firebase/Firestore'
+pod 'FBSDKLoginKit'
 	
   target 'SneakersApplicationTests' do
     inherit! :search_paths
