@@ -16,6 +16,7 @@ pod 'Firebase/Analytics'
 pod 'Firebase/Core'
 pod 'Firebase/Firestore'
 pod 'FBSDKLoginKit'
+pod 'XLPagerTabStrip'
 	
   target 'SneakersApplicationTests' do
     inherit! :search_paths

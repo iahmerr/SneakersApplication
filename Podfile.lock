@@ -291,6 +291,7 @@ PODS:
   - nanopb/encode (0.3.9011)
   - SwiftyJSON (5.0.0)
   - TinyConstraints (4.0.1)
+  - XLPagerTabStrip (9.0.0)
 
 DEPENDENCIES:
   - FacebookCore
@@ -302,6 +303,7 @@ DEPENDENCIES:
   - Firebase/Firestore
   - SwiftyJSON
   - TinyConstraints
+  - XLPagerTabStrip
 
 SPEC REPOS:
   trunk:
@@ -331,6 +333,7 @@ SPEC REPOS:
     - nanopb
     - SwiftyJSON
     - TinyConstraints
+    - XLPagerTabStrip
 
 SPEC CHECKSUMS:
   abseil: 18063d773f5366ff8736a050fe035a28f635fd27
@@ -359,7 +362,8 @@ SPEC CHECKSUMS:
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
   TinyConstraints: 8dd91295e56797648c7bc335dd20e1d91ec4c192
+  XLPagerTabStrip: 61c57fd61f611ee5f01ff1495ad6fbee8bf496c5
 
-PODFILE CHECKSUM: fe4cfdf1bb8ff0cfe3540ce5bb6c6505f03e31dc
+PODFILE CHECKSUM: 3d93359444eb55c606ecd552f509130e8142c7ca
 
 COCOAPODS: 1.8.4

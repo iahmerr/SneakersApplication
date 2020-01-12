@@ -27,6 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         _ application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
     ) -> Bool {
+    UITabBar.appearance().tintColor = .white
     Thread.sleep(forTimeInterval: 1)
     if FirebaseApp.app() == nil {
         FirebaseApp.configure()

@@ -13,6 +13,14 @@
 		C301E34323B1838300ECCC7A /* GoogleSignIn.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C301E33E23B1833800ECCC7A /* GoogleSignIn.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C301E34423B1838300ECCC7A /* GoogleSignInDependencies.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C301E33F23B1833800ECCC7A /* GoogleSignInDependencies.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C301E34A23B19FCF00ECCC7A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C301E34923B19FCF00ECCC7A /* HomeViewController.swift */; };
+		C33F1A3C23C9F9CC00648C51 /* CalenderCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C33F1A3B23C9F9CC00648C51 /* CalenderCollectionView.xib */; };
+		C33F1A4523CA1D1400648C51 /* CalenderCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33F1A4423CA1D1300648C51 /* CalenderCollectionView.swift */; };
+		C33F1A4823CA1DFE00648C51 /* CalenderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33F1A4623CA1DFE00648C51 /* CalenderCell.swift */; };
+		C33F1A4923CA1DFE00648C51 /* CalenderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C33F1A4723CA1DFE00648C51 /* CalenderCell.xib */; };
+		C33F1A4B23CA2CCB00648C51 /* ProfileTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33F1A4A23CA2CCB00648C51 /* ProfileTabViewController.swift */; };
+		C33F1A4D23CA750100648C51 /* StyleCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33F1A4C23CA750100648C51 /* StyleCollectionCell.swift */; };
+		C33F1A4F23CA755F00648C51 /* StyleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33F1A4E23CA755F00648C51 /* StyleViewController.swift */; };
+		C37C80D223CB437600B42F82 /* SneakersView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C37C80D123CB437600B42F82 /* SneakersView.xib */; };
 		C3A1B55123B8628100C3A758 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A1B55023B8628100C3A758 /* Utilities.swift */; };
 		C3A1B57123BA312D00C3A758 /* GothamNarrow-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = C3A1B56723BA312100C3A758 /* GothamNarrow-Book.otf */; };
 		C3A1B57223BA312D00C3A758 /* GothamNarrow-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = C3A1B56823BA312300C3A758 /* GothamNarrow-Thin.otf */; };
@@ -24,7 +32,6 @@
 		C3A1B57823BA312D00C3A758 /* Gotham-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = C3A1B56F23BA312C00C3A758 /* Gotham-Light.otf */; };
 		C3A1B57923BA312D00C3A758 /* Gotham-Ultra.otf in Resources */ = {isa = PBXBuildFile; fileRef = C3A1B57023BA312D00C3A758 /* Gotham-Ultra.otf */; };
 		C3B4956223B145FD00F74665 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3B4956123B145FD00F74665 /* Assets.xcassets */; };
-		C3C6CB6E23B16E01007998C2 /* GoogleSignIn.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C3C6CB6B23B16DF0007998C2 /* GoogleSignIn.bundle */; };
 		C3C6CB7023B16E1A007998C2 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3C6CB6F23B16E1A007998C2 /* LocalAuthentication.framework */; };
 		C3C6CB7223B16E28007998C2 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3C6CB7123B16E28007998C2 /* SafariServices.framework */; };
 		C3C6CB7423B16E42007998C2 /* AuthenticationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3C6CB7323B16E42007998C2 /* AuthenticationServices.framework */; };
@@ -94,6 +101,14 @@
 		C301E33E23B1833800ECCC7A /* GoogleSignIn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSignIn.framework; path = ../../../../Downloads/google_signin_sdk_5_0_2/GoogleSignIn.framework; sourceTree = "<group>"; };
 		C301E33F23B1833800ECCC7A /* GoogleSignInDependencies.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSignInDependencies.framework; path = ../../../../Downloads/google_signin_sdk_5_0_2/GoogleSignInDependencies.framework; sourceTree = "<group>"; };
 		C301E34923B19FCF00ECCC7A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		C33F1A3B23C9F9CC00648C51 /* CalenderCollectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalenderCollectionView.xib; sourceTree = "<group>"; };
+		C33F1A4423CA1D1300648C51 /* CalenderCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderCollectionView.swift; sourceTree = "<group>"; };
+		C33F1A4623CA1DFE00648C51 /* CalenderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderCell.swift; sourceTree = "<group>"; };
+		C33F1A4723CA1DFE00648C51 /* CalenderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalenderCell.xib; sourceTree = "<group>"; };
+		C33F1A4A23CA2CCB00648C51 /* ProfileTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTabViewController.swift; sourceTree = "<group>"; };
+		C33F1A4C23CA750100648C51 /* StyleCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleCollectionCell.swift; sourceTree = "<group>"; };
+		C33F1A4E23CA755F00648C51 /* StyleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleViewController.swift; sourceTree = "<group>"; };
+		C37C80D123CB437600B42F82 /* SneakersView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SneakersView.xib; sourceTree = "<group>"; };
 		C3A1B55023B8628100C3A758 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		C3A1B56723BA312100C3A758 /* GothamNarrow-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamNarrow-Book.otf"; sourceTree = "<group>"; };
 		C3A1B56823BA312300C3A758 /* GothamNarrow-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamNarrow-Thin.otf"; sourceTree = "<group>"; };
@@ -105,7 +120,6 @@
 		C3A1B56F23BA312C00C3A758 /* Gotham-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-Light.otf"; sourceTree = "<group>"; };
 		C3A1B57023BA312D00C3A758 /* Gotham-Ultra.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-Ultra.otf"; sourceTree = "<group>"; };
 		C3B4956123B145FD00F74665 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
-		C3C6CB6B23B16DF0007998C2 /* GoogleSignIn.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleSignIn.bundle; path = ../../../../Downloads/google_signin_sdk_5_0_2/GoogleSignIn.bundle; sourceTree = "<group>"; };
 		C3C6CB6F23B16E1A007998C2 /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
 		C3C6CB7123B16E28007998C2 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		C3C6CB7323B16E42007998C2 /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
@@ -184,6 +198,12 @@
 			isa = PBXGroup;
 			children = (
 				C3A1B55023B8628100C3A758 /* Utilities.swift */,
+				C33F1A4423CA1D1300648C51 /* CalenderCollectionView.swift */,
+				C33F1A3B23C9F9CC00648C51 /* CalenderCollectionView.xib */,
+				C33F1A4623CA1DFE00648C51 /* CalenderCell.swift */,
+				C33F1A4723CA1DFE00648C51 /* CalenderCell.xib */,
+				C33F1A4C23CA750100648C51 /* StyleCollectionCell.swift */,
+				C37C80D123CB437600B42F82 /* SneakersView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -207,7 +227,6 @@
 		C3F2DC6923AE8BC90029ECF0 = {
 			isa = PBXGroup;
 			children = (
-				C3C6CB6B23B16DF0007998C2 /* GoogleSignIn.bundle */,
 				C3F2DC7423AE8BC90029ECF0 /* SneakersApplication */,
 				C3F2DC8B23AE8BCE0029ECF0 /* SneakersApplicationTests */,
 				C3F2DC9623AE8BCF0029ECF0 /* SneakersApplicationUITests */,
@@ -282,10 +301,12 @@
 		C3F60BF823B6A99A00A41E3B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				C301E34923B19FCF00ECCC7A /* HomeViewController.swift */,
 				C3F2DC7923AE8BC90029ECF0 /* ViewController.swift */,
 				C3F60BF423B6A93A00A41E3B /* SignUpVC.swift */,
 				C3F60BF623B6A95600A41E3B /* LoginVC.swift */,
+				C301E34923B19FCF00ECCC7A /* HomeViewController.swift */,
+				C33F1A4A23CA2CCB00648C51 /* ProfileTabViewController.swift */,
+				C33F1A4E23CA755F00648C51 /* StyleViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -405,13 +426,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C33F1A3C23C9F9CC00648C51 /* CalenderCollectionView.xib in Resources */,
 				C3A1B57423BA312D00C3A758 /* Gotham-Thin.otf in Resources */,
 				C3A1B57223BA312D00C3A758 /* GothamNarrow-Thin.otf in Resources */,
-				C3C6CB6E23B16E01007998C2 /* GoogleSignIn.bundle in Resources */,
 				C3F2DC8223AE8BCE0029ECF0 /* LaunchScreen.storyboard in Resources */,
 				C3A1B57823BA312D00C3A758 /* Gotham-Light.otf in Resources */,
 				C3A1B57523BA312D00C3A758 /* Gotham-Medium.otf in Resources */,
 				C3A1B57923BA312D00C3A758 /* Gotham-Ultra.otf in Resources */,
+				C33F1A4923CA1DFE00648C51 /* CalenderCell.xib in Resources */,
+				C37C80D223CB437600B42F82 /* SneakersView.xib in Resources */,
 				C3A1B57323BA312D00C3A758 /* GothamNarrow-Ultra.otf in Resources */,
 				C3A1B57723BA312D00C3A758 /* Gotham-Book.otf in Resources */,
 				C3B4956223B145FD00F74665 /* Assets.xcassets in Resources */,
@@ -546,11 +569,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C33F1A4F23CA755F00648C51 /* StyleViewController.swift in Sources */,
+				C33F1A4D23CA750100648C51 /* StyleCollectionCell.swift in Sources */,
+				C33F1A4523CA1D1400648C51 /* CalenderCollectionView.swift in Sources */,
 				C3F2DC7A23AE8BC90029ECF0 /* ViewController.swift in Sources */,
 				C3F2DC7623AE8BC90029ECF0 /* AppDelegate.swift in Sources */,
 				C3A1B55123B8628100C3A758 /* Utilities.swift in Sources */,
 				C3F60BF723B6A95600A41E3B /* LoginVC.swift in Sources */,
+				C33F1A4823CA1DFE00648C51 /* CalenderCell.swift in Sources */,
 				C3F2DC7823AE8BC90029ECF0 /* SceneDelegate.swift in Sources */,
+				C33F1A4B23CA2CCB00648C51 /* ProfileTabViewController.swift in Sources */,
 				C3F60BF523B6A93A00A41E3B /* SignUpVC.swift in Sources */,
 				C301E34A23B19FCF00ECCC7A /* HomeViewController.swift in Sources */,
 			);

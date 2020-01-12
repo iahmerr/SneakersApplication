@@ -28,7 +28,7 @@ class SignUpVC: UIViewController {
         }
         navigationController?.isNavigationBarHidden = false
         showError.alpha = 0
-        navigationItem.title = "SignUp"
+        navigationItem.title = "Register"
         firstName.addTarget(self, action: #selector(edited(_:)), for: .editingChanged)
         
     }
