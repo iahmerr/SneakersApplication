@@ -13,6 +13,7 @@
 		C301E34323B1838300ECCC7A /* GoogleSignIn.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C301E33E23B1833800ECCC7A /* GoogleSignIn.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C301E34423B1838300ECCC7A /* GoogleSignInDependencies.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C301E33F23B1833800ECCC7A /* GoogleSignInDependencies.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C301E34A23B19FCF00ECCC7A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C301E34923B19FCF00ECCC7A /* HomeViewController.swift */; };
+		C31CFA3E23CE38BF003E50B5 /* icons8-wish-list-45.png in Resources */ = {isa = PBXBuildFile; fileRef = C31CFA3D23CE38BF003E50B5 /* icons8-wish-list-45.png */; };
 		C33F1A3C23C9F9CC00648C51 /* CalenderCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C33F1A3B23C9F9CC00648C51 /* CalenderCollectionView.xib */; };
 		C33F1A4523CA1D1400648C51 /* CalenderCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33F1A4423CA1D1300648C51 /* CalenderCollectionView.swift */; };
 		C33F1A4823CA1DFE00648C51 /* CalenderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33F1A4623CA1DFE00648C51 /* CalenderCell.swift */; };
@@ -101,6 +102,7 @@
 		C301E33E23B1833800ECCC7A /* GoogleSignIn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSignIn.framework; path = ../../../../Downloads/google_signin_sdk_5_0_2/GoogleSignIn.framework; sourceTree = "<group>"; };
 		C301E33F23B1833800ECCC7A /* GoogleSignInDependencies.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSignInDependencies.framework; path = ../../../../Downloads/google_signin_sdk_5_0_2/GoogleSignInDependencies.framework; sourceTree = "<group>"; };
 		C301E34923B19FCF00ECCC7A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		C31CFA3D23CE38BF003E50B5 /* icons8-wish-list-45.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-wish-list-45.png"; sourceTree = "<group>"; };
 		C33F1A3B23C9F9CC00648C51 /* CalenderCollectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalenderCollectionView.xib; sourceTree = "<group>"; };
 		C33F1A4423CA1D1300648C51 /* CalenderCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderCollectionView.swift; sourceTree = "<group>"; };
 		C33F1A4623CA1DFE00648C51 /* CalenderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderCell.swift; sourceTree = "<group>"; };
@@ -211,6 +213,7 @@
 		C3A1B56A23BA312700C3A758 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				C31CFA3D23CE38BF003E50B5 /* icons8-wish-list-45.png */,
 				C3A1B56E23BA312A00C3A758 /* Gotham-Book.otf */,
 				C3A1B56F23BA312C00C3A758 /* Gotham-Light.otf */,
 				C3A1B56C23BA312800C3A758 /* Gotham-Medium.otf */,
@@ -440,6 +443,7 @@
 				C3B4956223B145FD00F74665 /* Assets.xcassets in Resources */,
 				C3F2DC7D23AE8BC90029ECF0 /* Main.storyboard in Resources */,
 				C3F60BFA23B7825200A41E3B /* GoogleService-Info.plist in Resources */,
+				C31CFA3E23CE38BF003E50B5 /* icons8-wish-list-45.png in Resources */,
 				C3A1B57123BA312D00C3A758 /* GothamNarrow-Book.otf in Resources */,
 				C3A1B57623BA312D00C3A758 /* GothamNarrow-Black.otf in Resources */,
 			);

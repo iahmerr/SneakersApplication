@@ -12,45 +12,61 @@ import UIKit
 class HomeViewController: UIViewController {
     
     @IBOutlet weak var sneakerBottonBar: UIView!
-    @IBOutlet weak var apparelBottomBar: UIView!
+   
     @IBOutlet weak var calenderBottomBar: UIView!
     @IBOutlet weak var sneakersButton: UIButton!
-    @IBOutlet weak var apparelButton: UIButton!
-    @IBOutlet weak var calenderButton: UIButton!
+
     let utility = Utilities()
 
+    @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var insideView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.sneakerBottonBar.backgroundColor = .white
-        self.apparelBottomBar.backgroundColor = .black
-        self.calenderBottomBar.backgroundColor = .black
-       
+        self.sneakerBottonBar.backgroundColor = .black
+        self.calenderBottomBar.backgroundColor = .white
         
+        let itemSize = UIScreen.main.bounds.width/2
+              let layout = UICollectionViewFlowLayout()
+              layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+              layout.itemSize = CGSize(width: itemSize, height: 400)
+              layout.minimumLineSpacing = 0
+              layout.minimumInteritemSpacing = 0
+              collectionView.collectionViewLayout = layout
+   
     }
   
     @IBAction func sneakersPressed(_ sender: Any) {
         self.sneakerBottonBar.backgroundColor = .white
-        self.apparelBottomBar.backgroundColor = .black
         self.calenderBottomBar.backgroundColor = .black
+        collectionView.isHidden = true
         
     }
-    
-    @IBAction func apparelPressed(_ sender: Any) {
-        self.apparelBottomBar.backgroundColor = .white
-        self.sneakerBottonBar.backgroundColor = .black
-        self.calenderBottomBar.backgroundColor = .black
-        
-    }
-    
+
     @IBAction func calenderPressed(_ sender: Any) {
+       self.sneakerBottonBar.backgroundColor = .black
         self.calenderBottomBar.backgroundColor = .white
-        self.apparelBottomBar.backgroundColor = .black
-        self.sneakerBottonBar.backgroundColor = .black
-     let newView = Bundle.main.loadNibNamed("CalenderCollectionView", owner: self, options: nil)?.first 
-        insideView.addSubview(newView as! UIView)
-     
+        collectionView.isHidden = false
+    }
+   
+}
+extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return utility.homeMenu.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = self.collectionView.dequeueReusableCell(withReuseIdentifier: "CalenderCell", for: indexPath) as! CalenderCell
+        cell.dateLabel.text = "date"
+        cell.priceLabel.text = "$200"
+        cell.discriptionLabel.text = "hey hey description"
+        cell.pictureImage.image = UIImage(named: utility.imagesArray[indexPath.row])
+        return cell
     }
     
     
 }
+extension HomeViewController: UICollectionViewDelegateFlowLayout {
+
+    
+}
+

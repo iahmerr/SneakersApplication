@@ -19,6 +19,8 @@ class CalenderCollectionView: UIView, UICollectionViewDelegate, UICollectionView
         self.collectionView.register(CalenderCell.self, forCellWithReuseIdentifier: "CalenderCell")
         let nibCell = UINib(nibName: "CalenderCell", bundle: nil)
         collectionView.register(nibCell, forCellWithReuseIdentifier: "CalenderCell")
+        collectionView.bounces = true
+        collectionView.alwaysBounceVertical = true
         
     }
     
@@ -49,9 +51,10 @@ class CalenderCollectionView: UIView, UICollectionViewDelegate, UICollectionView
 extension CalenderCollectionView: UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize
     {
-            // In this function is the code you must implement to your code project if you want to change size of Collection view
-            let width  = (self.frame.width)/2
-            return CGSize(width: width, height: 350)
+           
+      let width  = (self.frame.width)/2
+        return CGSize(width: width, height: 350)
+        
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 0
@@ -67,3 +70,4 @@ extension CalenderCollectionView: UICollectionViewDelegateFlowLayout{
 
 
 }
+

@@ -1,0 +1,6 @@
+framework module Pods_SneakersApplication_SneakersApplicationUITests {
+  umbrella header "Pods-SneakersApplication-SneakersApplicationUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
