@@ -2,18 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>UIAppFonts</key>
-	<array>
-		<string>GothamNarrow-Black</string>
-		<string>GothanNarrow-Thin</string>
-		<string>Gotham-Ultra</string>
-		<string>GothamNarrow-Book</string>
-		<string>Gotham-Thin</string>
-		<string>Gotham-Book</string>
-		<string>Gotham-Light</string>
-		<string>Gotham-Medium</string>
-		<string>GothamNarrow-Ultra</string>
-	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
@@ -62,6 +50,18 @@
 	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>GothamNarrow-Black</string>
+		<string>GothanNarrow-Thin</string>
+		<string>Gotham-Ultra</string>
+		<string>GothamNarrow-Book</string>
+		<string>Gotham-Thin</string>
+		<string>Gotham-Book</string>
+		<string>Gotham-Light</string>
+		<string>Gotham-Medium</string>
+		<string>GothamNarrow-Ultra</string>
+	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

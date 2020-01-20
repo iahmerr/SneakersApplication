@@ -30,11 +30,10 @@ class CalenderCollectionView: UIView, UICollectionViewDelegate, UICollectionView
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CalenderCell", for: indexPath) as! CalenderCell
-        cell.discriptionLabel.text = data.homeMenu[indexPath.row]
-        cell.dateLabel.text = "16 Jan"
-        cell.priceLabel.text = "$ 120"
-     
-        cell.pictureImage.image = UIImage(named: data.imagesArray[indexPath.row])
+        cell.dateLabel.text = "20th Jan"
+        cell.discriptionLabel.text = "This is my shoe. "
+        cell.priceLabel.text = "$200"
+      cell.shoeImage.image = UIImage(named: data.imagesArray[indexPath.row])
         return cell
     }
     
@@ -53,7 +52,8 @@ extension CalenderCollectionView: UICollectionViewDelegateFlowLayout{
     {
            
       let width  = (self.frame.width)/2
-        return CGSize(width: width, height: 350)
+        print(width)
+        return CGSize(width: width, height: 400)
         
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {

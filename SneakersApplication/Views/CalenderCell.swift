@@ -10,11 +10,13 @@ import UIKit
 
 class CalenderCell: UICollectionViewCell {
 
-
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
-    @IBOutlet weak var pictureImage: UIImageView!
+    @IBOutlet weak var shoeImage: UIImageView!
     @IBOutlet weak var discriptionLabel: UILabel!
+    
+
+    
     override func awakeFromNib() {
         layer.borderWidth = 0.3
     }

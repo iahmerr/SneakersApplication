@@ -24,23 +24,25 @@ class StyleViewController: UIViewController {
 extension StyleViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return shoeArray.count
-        
+
     }
-    
+
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if collectionView == self.collectionView {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "StyleCollectionCell", for: indexPath) as! StyleCollectionCell
-                cell.styleImageViews.image = UIImage(named: shoeArray[indexPath.row])
+                cell.firstImage.image = UIImage(named: shoeArray[indexPath.row])
                 return cell
         }
         else {
         let cell2 = collectionView2.dequeueReusableCell(withReuseIdentifier: "StyleCell", for: indexPath) as! StyleCollectionCell
-            cell2.styleImage2.image = UIImage(named: shoeArray2[indexPath.row])
-        
+            cell2.secondImage.image = UIImage(named: shoeArray2[indexPath.row])
+
             return cell2
         }
-    }
-    
-    
-    
 }
+}
+    
+    
+    
+    
+
