@@ -18,7 +18,7 @@
 		C33F1A4523CA1D1400648C51 /* CalenderCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33F1A4423CA1D1300648C51 /* CalenderCollectionView.swift */; };
 		C33F1A4823CA1DFE00648C51 /* CalenderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33F1A4623CA1DFE00648C51 /* CalenderCell.swift */; };
 		C33F1A4923CA1DFE00648C51 /* CalenderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C33F1A4723CA1DFE00648C51 /* CalenderCell.xib */; };
-		C33F1A4B23CA2CCB00648C51 /* ProfileTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33F1A4A23CA2CCB00648C51 /* ProfileTabViewController.swift */; };
+		C33F1A4B23CA2CCB00648C51 /* WishListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33F1A4A23CA2CCB00648C51 /* WishListViewController.swift */; };
 		C33F1A4F23CA755F00648C51 /* StyleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33F1A4E23CA755F00648C51 /* StyleViewController.swift */; };
 		C3929B9223D4987000B41E2D /* SneakersCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3929B9023D4987000B41E2D /* SneakersCollectionCell.swift */; };
 		C3929B9523D4A83000B41E2D /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3929B9423D4A83000B41E2D /* SearchVC.swift */; };
@@ -29,6 +29,7 @@
 		C3929BA823D648B900B41E2D /* AirJordanCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3929BA623D648B900B41E2D /* AirJordanCell.swift */; };
 		C3929BA923D648B900B41E2D /* AirJordanCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3929BA723D648B900B41E2D /* AirJordanCell.xib */; };
 		C3929BAD23D6502A00B41E2D /* StyleCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3929BAC23D6502A00B41E2D /* StyleCollectionCell.swift */; };
+		C3929BAF23D76ECA00B41E2D /* WishListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3929BAE23D76ECA00B41E2D /* WishListCell.swift */; };
 		C3A1B55123B8628100C3A758 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A1B55023B8628100C3A758 /* Utilities.swift */; };
 		C3A1B57123BA312D00C3A758 /* GothamNarrow-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = C3A1B56723BA312100C3A758 /* GothamNarrow-Book.otf */; };
 		C3A1B57223BA312D00C3A758 /* GothamNarrow-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = C3A1B56823BA312300C3A758 /* GothamNarrow-Thin.otf */; };
@@ -114,7 +115,7 @@
 		C33F1A4423CA1D1300648C51 /* CalenderCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderCollectionView.swift; sourceTree = "<group>"; };
 		C33F1A4623CA1DFE00648C51 /* CalenderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderCell.swift; sourceTree = "<group>"; };
 		C33F1A4723CA1DFE00648C51 /* CalenderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalenderCell.xib; sourceTree = "<group>"; };
-		C33F1A4A23CA2CCB00648C51 /* ProfileTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTabViewController.swift; sourceTree = "<group>"; };
+		C33F1A4A23CA2CCB00648C51 /* WishListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishListViewController.swift; sourceTree = "<group>"; };
 		C33F1A4E23CA755F00648C51 /* StyleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleViewController.swift; sourceTree = "<group>"; };
 		C3929B9023D4987000B41E2D /* SneakersCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SneakersCollectionCell.swift; sourceTree = "<group>"; };
 		C3929B9423D4A83000B41E2D /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
@@ -125,6 +126,7 @@
 		C3929BA623D648B900B41E2D /* AirJordanCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirJordanCell.swift; sourceTree = "<group>"; };
 		C3929BA723D648B900B41E2D /* AirJordanCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AirJordanCell.xib; sourceTree = "<group>"; };
 		C3929BAC23D6502A00B41E2D /* StyleCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleCollectionCell.swift; sourceTree = "<group>"; };
+		C3929BAE23D76ECA00B41E2D /* WishListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishListCell.swift; sourceTree = "<group>"; };
 		C3A1B55023B8628100C3A758 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		C3A1B56723BA312100C3A758 /* GothamNarrow-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamNarrow-Book.otf"; sourceTree = "<group>"; };
 		C3A1B56823BA312300C3A758 /* GothamNarrow-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamNarrow-Thin.otf"; sourceTree = "<group>"; };
@@ -226,6 +228,7 @@
 				C3929BA623D648B900B41E2D /* AirJordanCell.swift */,
 				C3929BA723D648B900B41E2D /* AirJordanCell.xib */,
 				C3929BAC23D6502A00B41E2D /* StyleCollectionCell.swift */,
+				C3929BAE23D76ECA00B41E2D /* WishListCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -328,7 +331,7 @@
 				C3F60BF423B6A93A00A41E3B /* SignUpVC.swift */,
 				C3F60BF623B6A95600A41E3B /* LoginVC.swift */,
 				C301E34923B19FCF00ECCC7A /* HomeViewController.swift */,
-				C33F1A4A23CA2CCB00648C51 /* ProfileTabViewController.swift */,
+				C33F1A4A23CA2CCB00648C51 /* WishListViewController.swift */,
 				C33F1A4E23CA755F00648C51 /* StyleViewController.swift */,
 				C3929B9423D4A83000B41E2D /* SearchVC.swift */,
 			);
@@ -606,10 +609,11 @@
 				C3A1B55123B8628100C3A758 /* Utilities.swift in Sources */,
 				C3929BA823D648B900B41E2D /* AirJordanCell.swift in Sources */,
 				C3F60BF723B6A95600A41E3B /* LoginVC.swift in Sources */,
+				C3929BAF23D76ECA00B41E2D /* WishListCell.swift in Sources */,
 				C3929BA423D63A6000B41E2D /* JustDroppedCell.swift in Sources */,
 				C33F1A4823CA1DFE00648C51 /* CalenderCell.swift in Sources */,
 				C3F2DC7823AE8BC90029ECF0 /* SceneDelegate.swift in Sources */,
-				C33F1A4B23CA2CCB00648C51 /* ProfileTabViewController.swift in Sources */,
+				C33F1A4B23CA2CCB00648C51 /* WishListViewController.swift in Sources */,
 				C3929BAD23D6502A00B41E2D /* StyleCollectionCell.swift in Sources */,
 				C3F60BF523B6A93A00A41E3B /* SignUpVC.swift in Sources */,
 				C301E34A23B19FCF00ECCC7A /* HomeViewController.swift in Sources */,
